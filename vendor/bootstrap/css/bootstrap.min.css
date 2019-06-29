@@ -5930,7 +5930,6 @@ button.close {
 .bg-primary {
     background: url('skyline.jpg');
     background-size: cover;
-    margin-top: 4%;
 }
 
 a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
