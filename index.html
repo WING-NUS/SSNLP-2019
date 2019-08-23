@@ -49,10 +49,10 @@
             border-collapse: separate /* otherwise does not work in IE inside tables */;
         }
         .hover2 {
-            -webkit-box-shadow: 5px 5px 5px rgba(100,100,120,0.6);
-            -moz-box-shadow: 5px 5px 5px rgba(100,100,120,0.6);
-            -o-box-shadow: 5px 5px 5px rgba(100,100,120,0.6);
-            box-shadow: 5px 5px 10px rgba(100,100,120,0.6);
+            -webkit-box-shadow: 2px 2px 2px rgba(100,100,120,0.6);
+            -moz-box-shadow: 2px 2px 2px rgba(100,100,120,0.6);
+            -o-box-shadow: 2px 2px 2px rgba(100,100,120,0.6);
+            box-shadow: 2px 2px 2px rgba(100,100,120,0.6);
         }
         figure figcaption {
             text-align: center;
@@ -63,10 +63,19 @@
         }
         figure img {
             vertical-align: top;
+            border: 1px solid #ddd;
+            border-radius: 0px;
+            padding: 0px;
         }
         figure img:hover {
-            opacity: 0.5;
-            filter: alpha(opacity=50); 
+            opacity: 0.7;
+            filter: alpha(opacity=70); 
+            -webkit-box-shadow: -2px 4px 10px 0px rgba(0,0,0,1);
+            -moz-box-shadow: -2px 4px 10px 0px rgba(0,0,0,1);
+            box-shadow: -2px 4px 10px 0px rgba(0,0,0,1);
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+
         }
     </style>
 </head>
