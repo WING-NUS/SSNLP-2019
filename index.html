@@ -42,6 +42,18 @@
             background: repeating-linear-gradient(to right, black 0, black 10px, transparent 10px, transparent 12px)
             /*10px red then 2px transparent -> repeat this!*/
         }
+        .bordered, .hover2, xximg:hover {
+            border-color: #AAAAAA;
+            border-style: solid;
+            border-width: 1px;
+            border-collapse: separate /* otherwise does not work in IE inside tables */;
+        }
+        .hover2 {
+            -webkit-box-shadow: 5px 5px 5px rgba(100,100,120,0.6);
+            -moz-box-shadow: 5px 5px 5px rgba(100,100,120,0.6);
+            -o-box-shadow: 5px 5px 5px rgba(100,100,120,0.6);
+            box-shadow: 5px 5px 5px rgba(100,100,120,0.6);
+        }
     </style>
 </head>
 
@@ -254,7 +266,7 @@
                             <tr>
                                 <td>
                                     <a href="#rada" data-toggle="collapse">
-                                        <img src="images/rada.png" width="160" height="192">
+                                        <img src="images/rada.png" class="hover2" width="160" height="192">
                                     </a>
                                     <br>
                                     <h5><a href="https://web.eecs.umich.edu/~mihalcea/">Rada Mihalcea</a></h5>
