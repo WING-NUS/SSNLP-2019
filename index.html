@@ -42,37 +42,43 @@
             background: repeating-linear-gradient(to right, black 0, black 10px, transparent 10px, transparent 12px)
             /*10px red then 2px transparent -> repeat this!*/
         }
+
         .bordered, .hover2, xximg:hover {
             border-color: #AAAAAA;
             border-style: solid;
             border-width: 1px;
             border-collapse: separate /* otherwise does not work in IE inside tables */;
         }
+
         .hover2 {
-            -webkit-box-shadow: 2px 2px 2px rgba(100,100,120,0.6);
-            -moz-box-shadow: 2px 2px 2px rgba(100,100,120,0.6);
-            -o-box-shadow: 2px 2px 2px rgba(100,100,120,0.6);
-            box-shadow: 0px 0px 10px rgba(100,100,120,0.6);
+            -webkit-box-shadow: 2px 2px 2px rgba(100, 100, 120, 0.6);
+            -moz-box-shadow: 2px 2px 2px rgba(100, 100, 120, 0.6);
+            -o-box-shadow: 2px 2px 2px rgba(100, 100, 120, 0.6);
+            box-shadow: 0px 0px 10px rgba(100, 100, 120, 0.6);
         }
+
         figure figcaption {
             text-align: center;
         }
+
         figure {
             display: inline-block;
             margin: 0px;
         }
+
         figure img {
             vertical-align: top;
             border: 1px solid #ddd;
             border-radius: 0px;
             padding: 0px;
         }
+
         figure img:hover {
             opacity: 0.7;
-            filter: alpha(opacity=70); 
-            -webkit-box-shadow: -2px 4px 10px 0px rgba(0,0,0,1);
-            -moz-box-shadow: -2px 4px 10px 0px rgba(0,0,0,1);
-            box-shadow: -2px 4px 10px 0px rgba(0,0,0,1);
+            filter: alpha(opacity=70);
+            -webkit-box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 1);
+            -moz-box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 1);
+            box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 1);
             -webkit-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
 
@@ -151,10 +157,12 @@
                 </p>
                 <h5>Latest news</h5>
                 <p>
-                    <span class="white_bg"><strong>Aug 12, 2019</strong> <A HREF="#registration">SSNLP 2019 registration</A> is now live! It's free, so register now!</span>
+                    <span class="white_bg"><strong>Aug 12, 2019</strong> <A
+                            HREF="#registration">SSNLP 2019 registration</A> is now live! It's free, so register now!</span>
                 <p>
                 <p>
-                    <span class="white_bg"><strong>July 19, 2019</strong> We have confirmed three world-class academic <a href="#speakers">speakers</a> so far, with more on the way! </span>
+                    <span class="white_bg"><strong>July 19, 2019</strong> We have confirmed three world-class academic <a
+                            href="#speakers">speakers</a> so far, with more on the way! </span>
                 <p>
             </div>
         </div>
@@ -258,7 +266,7 @@
                                 <tbody>
                                 <tr>
                                     <td valign="top">09:00 - 12:00 &nbsp;&nbsp;</td>
-                                    <td valign="top"><strong>Events at individual IHLs.  TBA.</strong></td>
+                                    <td valign="top"><strong>Events at individual IHLs. TBA.</strong></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -279,7 +287,7 @@
             <div class="col-lg-8 mx-auto">
                 <h3>Speakers</h3>
                 <p>
-                    The following speakers have accepted to give keynotes at SSNLP 2019.
+                    The following speakers have accepted to give keynotes at SSNLP 2019. You can view the detailed information by clicking the images.
                 </p>
 
                 <div class="accordion" id="accordion">
@@ -298,21 +306,22 @@
                                 <td>
                                     <a href="#edhovy" data-toggle="collapse">
                                         <figure>
-                                            <img src="images/ed.png" class="hover2" align="center" width="160" height="192">
+                                            <img src="images/ed.png" class="hover2" align="center" width="160"
+                                                 height="192">
                                             <figcaption>
                                                 <h5>Eduard Hovy</h5>
                                             </figcaption>
                                         </figure>
                                     </a>
                                     <br>
-                                    
+
                                 </td>
                                 <td>
                                     <a href="#hengji" data-toggle="collapse">
                                         <figure>
                                             <img src="images/hengji.png" class="hover2" width="160" height="192">
-                                            <figcaption><h5>Heng Ji</h5></figcaption> 
-                                         </figure>
+                                            <figcaption><h5>Heng Ji</h5></figcaption>
+                                        </figure>
                                     </a>
                                 </td>
                             </tr>
@@ -353,70 +362,107 @@
                         <br>
                         <strong>Speaker: </strong><a href="https://www.cs.cmu.edu/~hovy">Eduard Hovy</a>
                         <br>
-                        <strong> Abstract: </strong>In modern automated QA research, what differentiates simple/shallow from complex/deep QA?  Early QA research developed pattern-learning and -matching techniques to identify the appropriate factoid answer(s), and this approach has been taken a step further recently by recent neural architectures that learn and apply more-flexible generalized word/type-sequence ‘patterns’.  However, many QA tasks require some sort of intermediate reasoning or other inference procedures more complex than generalization over pattern-anchored words and phrases.  In one approach, people focus on the automated construction of small access functions to locate the answer in structured resources like tables or databases.  But much (or most) knowledge is not structured, and what to do in this case is unclear.  Most current ‘deep’ QA approaches take a one-size-fits-all approach in which they essentially hope that a multi-layer neural architecture will somehow learn to encode inference steps automatically.  The main problem facing this line of research is the difficulty in defining exactly what kinds of reasoning are relevant, and what knowledge resources are required to support them.  If all relevant knowledge is apparent on the surface of the question material, then shallow pattern-matching techniques (perhaps involving combinations of patterns) can surely be developed using simple/shallow methods.  But if not, then (at least some of) the relevant knowledge is either internal to the QA system or resides in some additional, external resource (like the web), which makes the design and construction of general comprehensive datasets and evaluations very difficult.  (In fact, the same problem faces all in-depth semantic analysis research topics, including entailment, machine reading, semantic information extraction, and more.)  How should the Complex-QA community respond to this conundrum?  In this talk I outline the problem, define four levels of QA, and propose a general direction for future research.  
+                        <strong> Abstract: </strong>In modern automated QA research, what differentiates simple/shallow
+                        from complex/deep QA? Early QA research developed pattern-learning and -matching techniques to
+                        identify the appropriate factoid answer(s), and this approach has been taken a step further
+                        recently by recent neural architectures that learn and apply more-flexible generalized
+                        word/type-sequence ‘patterns’. However, many QA tasks require some sort of intermediate
+                        reasoning or other inference procedures more complex than generalization over pattern-anchored
+                        words and phrases. In one approach, people focus on the automated construction of small access
+                        functions to locate the answer in structured resources like tables or databases. But much (or
+                        most) knowledge is not structured, and what to do in this case is unclear. Most current ‘deep’
+                        QA approaches take a one-size-fits-all approach in which they essentially hope that a
+                        multi-layer neural architecture will somehow learn to encode inference steps automatically. The
+                        main problem facing this line of research is the difficulty in defining exactly what kinds of
+                        reasoning are relevant, and what knowledge resources are required to support them. If all
+                        relevant knowledge is apparent on the surface of the question material, then shallow
+                        pattern-matching techniques (perhaps involving combinations of patterns) can surely be developed
+                        using simple/shallow methods. But if not, then (at least some of) the relevant knowledge is
+                        either internal to the QA system or resides in some additional, external resource (like the
+                        web), which makes the design and construction of general comprehensive datasets and evaluations
+                        very difficult. (In fact, the same problem faces all in-depth semantic analysis research topics,
+                        including entailment, machine reading, semantic information extraction, and more.) How should
+                        the Complex-QA community respond to this conundrum? In this talk I outline the problem, define
+                        four levels of QA, and propose a general direction for future research.
                         <br>
-                        <strong>Bio:</strong> Eduard Hovy is a research full professor at the Language Technologies Institute in the
-                                               School of Computer Science at Carnegie Mellon University. He also holds adjunct
-                                                professorships in CMU’s Machine Learning Department and at USC (Los Angeles) and BUPT
-                                                (China). Dr. Hovy completed a Ph.D. in Computer Science (Artificial Intelligence) at Yale
-                                                University in 1987, and was awarded honorary doctorates from the National Distance
-                                                Education University (UNED) in Madrid in 2013 and the University of Antwerp in 2015. He
-                                                is one of the initial 17 Fellows of the Association for Computational Linguistics (ACL) and
-                                                also a Fellow of the Association for the Advancement of Artificial Intelligence (AAAI). Dr.
-                                                Hovy’s research focuses on computational semantics of language, and addresses various
-                                                areas in Natural Language Processing and Data Analytics, including in-depth machine
-                                                reading of text, information extraction, automated text summarization, question answering,
-                                                the semi-automated construction of large lexicons and ontologies, and machine translation.
-                                                In early 2019 his Google h-index was 77, with over 27,000 citations. Dr. Hovy is the author
-                                                or co-editor of six books and over 400 technical articles and is a popular invited speaker.
-                                                From 2003 to 2015 he was co-Director of Research for the Department of Homeland
-                                                Security’s Center of Excellence for Command, Control, and Interoperability Data Analytics, a
-                                                distributed cooperation of 17 universities. In 2001 Dr. Hovy served as President of the
-                                                international Association of Computational Linguistics (ACL), in 2001–03 as President of
-                                                the International Association of Machine Translation (IAMT), and in 2010–11 as President
-                                                of the Digital Government Society (DGS). Dr. Hovy regularly co-teaches Ph.D.-level courses
-                                                and has served on Advisory and Review Boards for both research institutes and funding
-                                                organizations in Germany, Italy, Netherlands, Ireland, Singapore, and the USA.
+                        <strong>Bio:</strong> Eduard Hovy is a research full professor at the Language Technologies
+                        Institute in the
+                        School of Computer Science at Carnegie Mellon University. He also holds adjunct
+                        professorships in CMU’s Machine Learning Department and at USC (Los Angeles) and BUPT
+                        (China). Dr. Hovy completed a Ph.D. in Computer Science (Artificial Intelligence) at Yale
+                        University in 1987, and was awarded honorary doctorates from the National Distance
+                        Education University (UNED) in Madrid in 2013 and the University of Antwerp in 2015. He
+                        is one of the initial 17 Fellows of the Association for Computational Linguistics (ACL) and
+                        also a Fellow of the Association for the Advancement of Artificial Intelligence (AAAI). Dr.
+                        Hovy’s research focuses on computational semantics of language, and addresses various
+                        areas in Natural Language Processing and Data Analytics, including in-depth machine
+                        reading of text, information extraction, automated text summarization, question answering,
+                        the semi-automated construction of large lexicons and ontologies, and machine translation.
+                        In early 2019 his Google h-index was 77, with over 27,000 citations. Dr. Hovy is the author
+                        or co-editor of six books and over 400 technical articles and is a popular invited speaker.
+                        From 2003 to 2015 he was co-Director of Research for the Department of Homeland
+                        Security’s Center of Excellence for Command, Control, and Interoperability Data Analytics, a
+                        distributed cooperation of 17 universities. In 2001 Dr. Hovy served as President of the
+                        international Association of Computational Linguistics (ACL), in 2001–03 as President of
+                        the International Association of Machine Translation (IAMT), and in 2010–11 as President
+                        of the Digital Government Society (DGS). Dr. Hovy regularly co-teaches Ph.D.-level courses
+                        and has served on Advisory and Review Boards for both research institutes and funding
+                        organizations in Germany, Italy, Netherlands, Ireland, Singapore, and the USA.
                     </div>
 
                     <div id="hengji" class="collapse" data-parent="#accordion">
-                        <strong>Title: </strong>TBA
+                        <strong>Title: </strong>Cross-lingual Cross-media Relation and Event Structure Transfer
                         <br>
                         <strong>Speaker: </strong><a href="http://nlp.cs.rpi.edu/hengji.html">Heng Ji</a>
-                        <!--                    <br>-->
-                        <!--                    <strong> Abstract: </strong>TBC-->
                         <br>
-                        <strong>Bio:</strong> Heng Ji is Edward P. Hamilton Chair Professor in Computer Science
-                        Department
-                        of Rensselaer Polytechnic Institute. She received her B.A. and M. A. in Computational
-                        Linguistics
-                        from Tsinghua University, and her M.S. and Ph.D. in Computer Science from New York University.
-                        Her
-                        research interests focus on Natural Language Processing and its connections with Data Mining,
-                        Social
-                        Science and Vision. She was selected as "Young Scientist" and a member of the Global Future
-                        Council
-                        on the Future of Computing by the World Economic Forum in 2016 and 2017. She received "AI's 10
-                        to
-                        Watch" Award by IEEE Intelligent Systems in 2013, NSF CAREER award in 2009, Google Research
-                        Awards
-                        in 2009 and 2014, Sloan Junior Faculty Award in 2012, IBM Watson Faculty Award in 2012 and 2014,
-                        Bosch Research Awards in 2015, 2016 and 2017, PACLIC2012 Best Paper Runner-up, "Best of SDM2013"
-                        paper, "Best of ICDM2013" paper.
+                        <strong> Abstract: </strong>
+                        The identification of complex semantic graph structures such as events and entity relations from
+                        unstructured texts, already a challenging Information Extraction task, is doubly difficult to
+                        extract from sources written in under-resourced and under-annotated languages. We investigate
+                        the suitability of cross-lingual cross-media graph structure transfer techniques for these
+                        tasks. Previous efforts on cross-lingual transfer are limited to sequence level. In contrast, we
+                        observe that relational facts are typically expressed by identifiable structured graph patterns
+                        across multiple languages and data modalities. We exploit relation- and event-relevant
+                        language-universal and modality-universal features, leveraging both symbolic (including
+                        part-of-speech and dependency path) and distributional (including type representation and
+                        contextualized representation) information. We then represent all entity mentions, event
+                        triggers, and contexts into this complex and structured multilingual common space, using graph
+                        convolutional networks. In this way all the sentences from multiple languages, along with visual
+                        objects from images are represented as one shared unified graph representation. We then train a
+                        relation or event extractor from source language annotations and apply it to the target language
+                        and images. Extensive experiments on cross-lingual and cross-media relation and event transfer
+                        demonstrate that our approach achieves performance comparable to state-of-the-art supervised
+                        models trained on up to 3,000 manually annotated mentions, and dramatically outperforms methods
+                        learned from flat representation. I will show a preliminary demo on applying the resultant event
+                        knowledge base for automatic history book generation.
+                        <br>
+                        <strong>Bio:</strong>
+                        Heng Ji is a professor at Computer Science Department of University of Illinois at
+                        Urbana-Champaign. She received her B.A. and M. A. in Computational Linguistics from Tsinghua
+                        University, and her M.S. and Ph.D. in Computer Science from New York University. Her research
+                        interests focus on Natural Language Processing, especially on Information Extraction and
+                        Knowledge Base Population. She is selected as "Young Scientist" and a member of the Global
+                        Future Council on the Future of Computing by the World Economic Forum in 2016 and 2017. The
+                        awards she received include "AI's 10 to Watch" Award by IEEE Intelligent Systems in 2013 and NSF
+                        CAREER award in 2009. She has coordinated the NIST TAC Knowledge Base Population task since
+                        2010. She is the associate editor for IEEE/ACM Transaction on Audio, Speech, and Language
+                        Processing, and served as the Program Committee Co-Chair of many conferences including
+                        NAACL-HLT2018.
                     </div>
                     <div class="table-responsive">
                         <table class="table">
                             <tbody>
-                                <tr>
-                                    <td>
-                                        <a href="#william" data-toggle="collapse">
-                                            <figure>
-                                                <img src="https://sites.cs.ucsb.edu/~william/profile18.jpg" class="hover2" width="160" height="192">
-                                                <figcaption><h5>William Wang</h5></figcaption> 
-                                             </figure>
-                                         </a>
-                                    </td>
-                                 </tr>
+                            <tr>
+                                <td>
+                                    <a href="#william" data-toggle="collapse">
+                                        <figure>
+                                            <img src="https://sites.cs.ucsb.edu/~william/profile18.jpg" class="hover2"
+                                                 width="160" height="192">
+                                            <figcaption><h5>William Wang</h5></figcaption>
+                                        </figure>
+                                    </a>
+                                </td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -424,11 +470,37 @@
                         <strong>Title: Self-Supervised Natural Language Processing</strong>
                         <br>
                         <strong>Speaker: </strong><a href="https://sites.cs.ucsb.edu/~william/">William Wang</a>
-                        <!--                    <br>-->
                         <br>
-                        <strong> Abstract:</strong> With the vast amount of language data available in digital form, now is a good opportunity to move beyond traditional supervised learning methods. The core research question that I will address in this talk is the following: What is self-supervised learning? What is the success story behind BERT and XLNet? How can we design self-supervised deep learning methods to operate over rich language and knowledge representations? In this talk, I will describe some examples of my work in advancing the state-of-the-arts in methods of self-supervised learning for NLP, including: 1) AREL, a self-adaptive inverse reinforcement learning agent for visual storytelling; and 2) Self-supervised learning that goes beyond surface-level representation learning. I will conclude this talk by describing my other research interests in the interdisciplinary field of AI/ML/NLP/Vision.
+                        <strong> Abstract:</strong> With the vast amount of language data available in digital form, now
+                        is a good opportunity to move beyond traditional supervised learning methods. The core research
+                        question that I will address in this talk is the following: What is self-supervised learning?
+                        What is the success story behind BERT and XLNet? How can we design self-supervised deep learning
+                        methods to operate over rich language and knowledge representations? In this talk, I will
+                        describe some examples of my work in advancing the state-of-the-arts in methods of
+                        self-supervised learning for NLP, including: 1) AREL, a self-adaptive inverse reinforcement
+                        learning agent for visual storytelling; and 2) Self-supervised learning that goes beyond
+                        surface-level representation learning. I will conclude this talk by describing my other research
+                        interests in the interdisciplinary field of AI/ML/NLP/Vision.
                         <br>
-                        <strong>Bio:</strong> William Wang is an Assistant Professor in the Department of Computer Science at the University of California, Santa Barbara. He is the Director of UCSB's Responsible Machine Learning Center. He received his PhD from School of Computer Science, Carnegie Mellon University in 2016. He has broad interests in machine learning approaches to data science, including natural language processing, statistical relational learning, information extraction, computational social science, dialogue, and vision. He directs UCSB’s NLP Group (nlp.cs.ucsb.edu): in two years, UCSB advanced in the NLP area from an undefined ranking position to top 3 in 2018 according to CSRankings.org. He has published more than 80 papers at leading NLP/AI/ML conferences and journals, and received best paper awards (or nominations) at ASRU 2013, CIKM 2013, EMNLP 2015, and CVPR 2019, a DARPA Young Faculty Award (Class of 2018), a Google Faculty Research Award (2018), two IBM Faculty Awards in 2017 and 2018, a Facebook Research Award in 2018, an Adobe Research Award in 2018, and the Richard King Mellon Presidential Fellowship in 2011. He frequently serves as an Area Chair for NAACL, ACL, EMNLP, and AAAI. He is an alumnus of Columbia University, Yahoo! Labs, Microsoft Research Redmond, and University of Southern California. In addition to research, William enjoys writing scientific articles that influence the broader online community: his microblog Weibo has 116,000+ followers and more than 2,000,000 views each month. His work and opinions frequently appear at major international media outlets such as Wired, VICE, Fast Company, NASDAQ, Scientific American, The Next Web, The Brookings Institution, Law.com, and Mental Floss.
+                        <strong>Bio:</strong> William Wang is an Assistant Professor in the Department of Computer
+                        Science at the University of California, Santa Barbara. He is the Director of UCSB's Responsible
+                        Machine Learning Center. He received his PhD from School of Computer Science, Carnegie Mellon
+                        University in 2016. He has broad interests in machine learning approaches to data science,
+                        including natural language processing, statistical relational learning, information extraction,
+                        computational social science, dialogue, and vision. He directs UCSB’s NLP Group
+                        (nlp.cs.ucsb.edu): in two years, UCSB advanced in the NLP area from an undefined ranking
+                        position to top 3 in 2018 according to CSRankings.org. He has published more than 80 papers at
+                        leading NLP/AI/ML conferences and journals, and received best paper awards (or nominations) at
+                        ASRU 2013, CIKM 2013, EMNLP 2015, and CVPR 2019, a DARPA Young Faculty Award (Class of 2018), a
+                        Google Faculty Research Award (2018), two IBM Faculty Awards in 2017 and 2018, a Facebook
+                        Research Award in 2018, an Adobe Research Award in 2018, and the Richard King Mellon
+                        Presidential Fellowship in 2011. He frequently serves as an Area Chair for NAACL, ACL, EMNLP,
+                        and AAAI. He is an alumnus of Columbia University, Yahoo! Labs, Microsoft Research Redmond, and
+                        University of Southern California. In addition to research, William enjoys writing scientific
+                        articles that influence the broader online community: his microblog Weibo has 116,000+ followers
+                        and more than 2,000,000 views each month. His work and opinions frequently appear at major
+                        international media outlets such as Wired, VICE, Fast Company, NASDAQ, Scientific American, The
+                        Next Web, The Brookings Institution, Law.com, and Mental Floss.
                     </div>
 
                 </div>
@@ -537,8 +609,10 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2>Registration</h2>
-                Registration for SSNLP 2019 is now <a href="https://register.comp.nus.edu.sg/ssnlp/">available online</a>!
-                The event is free and open to the general public but capacity at the venue is limited.  Please register early to secure your spot for the day sessions!   
+                Registration for SSNLP 2019 is now <a href="https://register.comp.nus.edu.sg/ssnlp/">available
+                online</a>!
+                The event is free and open to the general public but capacity at the venue is limited. Please register
+                early to secure your spot for the day sessions!
                 </p>
                 </p>
             </div>
