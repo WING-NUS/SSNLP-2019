@@ -158,7 +158,7 @@ th, td {
 }
 
 .table100.ver5 .hov-column-ver5 {
-  background-color: #f0f0f0;
+/*  background-color: #f0f0f0;*/
 }
 
 .table100.ver5 .hov-column-ver5::before {
